@@ -36,7 +36,7 @@ html>
         <ul>
           <li id="scroll"><a href="#about"> ABOUT </a></li>
           <li id="scroll-two"><a href="#education"> EDUCATION </a></li>
-          <li id="scroll-twoo"><a href="#cv"> CV </a></li>
+          <li id="scroll-three"><a href="#cv"> CV </a></li>
           <li id="scroll-four"><a href="#contact"> CONTACT </a></li>
         </ul>
       </nav>
@@ -50,7 +50,7 @@ html>
 
     <div class="two-col-grid">
 
-    <div style="height: 460px;" class="l-education" >
+    <div class="l-education" >
 
     <div class="grid-item l-academy ">
       <div class="grid-inner">
@@ -86,9 +86,6 @@ html>
         <p class="school">Biology</p>
         <p class="school">Geography</p>
 
-
-
-
       </div>
     </div>
 
@@ -100,12 +97,11 @@ html>
 
     <div id="title-skills">
 
-      <h3>Skills</h3>
+      <h3 style="text-align: center">Skills</h3>
 
     </div>
 
-
-      <div>
+      <div class="pic">
           <img class="skill" src="assets/images/white git.png" width="80px" height= "80px">
           <img class="skill" src="assets/images/css.png" width="80px" height= "80px">
           <img class="skill" src="assets/images/sql.png" width="80px" height= "80px">
@@ -125,13 +121,13 @@ html>
     <div class="grid-item l-job-1">
       <div class="grid-inner">
 
-        <h4></h4>
+        <h4>Mr Delivery</h4>
 
-        <p></p>
+        <p>Manager</p>
 
-        <p></p>
+        <p>2012 - 2017</p>
 
-        <p></p>
+        <p>I managed a team of drivers. </p>
 
       </div>
     </div>
@@ -164,11 +160,11 @@ html>
 </div>
 </div>
 
-  <div id="call-to-action"><h4 id="contact" style="margin-left: 400px">If you are interested please contact me <a href="mailto:gjfpjackson@gmail.com"><button style="margin-left: 100px">Contact</button></a></h4></div>
+  <div id="call-to-action"><h4 id="contact">If you are interested please contact me <a href="mailto:gjfpjackson@gmail.com"><button style="margin-left: 100px">Contact</button></a></h4></div>
 
-  <div id="footer">
+  <div class="footer">
     <div>
-      <a href="" target="_blank"> <img src="Images\linkedin-logo.png" alt="linkedin" width="25px" height="25px"> LinkedIn</a> <a href="https://github.com/khuanitabright"target="_blank"> <img src="Images\github.png" alt="GitHub" width="25px" height="25px" style="padding-left: 0"> GitHub</a>
+      <a href="" target="_blank"> <img src="assets\images\link.png" alt="linkedin" width="35px" height="35px"> LinkedIn</a> <a href="https://github.com/jacksongreg"target="_blank"> <img src="assets\images\white git.png" alt="GitHub" width="35px" height="35px" style="padding-left: 0"> GitHub</a>
     </div>
     <p class="mail"><a href="mailto:gjfpjackson@gmail.com"> gjfpjackson@gmail.com</a></p>
   </div>
@@ -177,13 +173,6 @@ html>
 
 
 <script>
-
-$(function () {
-    var $first=$('#carousel>:first-child');
-    $('#carousel').width($first.outerWidth(true));
-    $first.clone(true).appendTo('#carousel');
-    $('#carousel').addClass('ready');
-  })
 
   window.onscroll = function() {myFunction()};
 
@@ -210,15 +199,9 @@ $(function () {
     },2000)
   })
 
-  $('#scroll-twoo').click(function(){
-    $('html, body').animate({
-      scrollTop: $('#title-cv').offset().top
-    },2000)
-  })
-
   $('#scroll-three').click(function(){
     $('html, body').animate({
-      scrollTop: $('#title-latest-work').offset().top
+      scrollTop: $('#title-cv').offset().top
     },2000)
   })
 

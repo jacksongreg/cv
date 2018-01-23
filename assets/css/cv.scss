@@ -46,16 +46,42 @@ body {
 
 .mail {
   margin-left: 30px;
+
 }
 
 .skill{
-  padding-left: 40px;
-  padding-right: 50px;
+  padding-left: 45px;
+  padding-right: 60px;
   background-color: #bac3e4;
-  margin-right:0;
+
 }
 
-@media (max-width: 600px) {
+.pic{
+  background-color: #bac3e4;
+}
+
+.footer {
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  height: 120px;
+  width: 100%;
+  padding: 10px;
+  background-color: $tertiary-color;
+  }
+
+a {
+   color:$text-color;
+}
+
+pre{
+  display:none;
+}
+
+#contact{
+  text-align: center;
+}
+@media (min-width: 400px) and (max-width: 800px) {
   body{
   display: block;
   margin: 0;
@@ -68,7 +94,7 @@ body {
   margin-left: auto;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 800px) {
   .l-wrap{
     width: 100%;
     margin: 0;
@@ -95,7 +121,7 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   align-items: left;
-  height: 300px;
+  height: 400px;
   text-align: left;
 
   p{
@@ -114,6 +140,8 @@ body {
 
 
 .l-education {
+  height: 460px;
+
   .l-highschool {
     width: percentage(5/12);
     border: none;
@@ -125,9 +153,10 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 800px) {
   .l-education {
     margin-left: -13px;
+    height: 850px;
   .l-highschool {
     width: 100%;
    }
@@ -176,7 +205,7 @@ div#header {
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 800px) {
   div#header {
     width: 100%;
     margin: 0;
@@ -224,6 +253,7 @@ nav {
      list-style-type: none;
      width: 100%;
      margin-right: 300px;
+     text-align: center;
    }
 
    li {
@@ -265,7 +295,7 @@ nav {
     display: block;
     padding: 0;
     margin: 0;
-
+    text-align: center;
     float: left;
   }
   nav li{
@@ -273,13 +303,13 @@ nav {
     padding: 5px;
     display: block;
     background-color: $tertiary-color;
-    border: 1px solid lightgrey;
+    text-align: center;
   }
 
  nav ul li a {
    color: $text-color;
    padding-bottom: 3px;
-   text-align: left;
+   text-align: center;
    font-size: 12px;
    text-shadow: none;
  }
@@ -307,7 +337,7 @@ div#title-education {
   height: 100px;
   margin-top: -40px;
 }
-@media (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 800px) {
   div#title-education {
     width: 100%;
     padding-left: 10px;
@@ -320,7 +350,7 @@ div#title-skills {
   background-color: $tertiary-color;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 800px) {
   div#title-skills {
     display: none;
     width: 100%;
@@ -330,63 +360,8 @@ div#title-skills {
   }
 }
 
-div#carousel {
-  background-color: $tertiary-color;
-  height: 150px;
-  padding: 10px;
-}
-
-@media (max-width: 600px) {
-  div#carousel {
-    display: none;
-  }
-}
-
-div#carousel {
-      width: 10000%;
-
-      img {
-        padding: 20px;
-      }
-    }
-    /*this styling works with JQuery and regulates the speed and loop of the carousel*/
-    div#carousel.ready > *{
-    display: inline-block;
-    float:left;
-    overflow: hidden;
-
-    webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-
-
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-
-
-    -webkit-animation-duration: 20s;
-    animation-duration: 20s;
-
-
-    -webkit-animation-name: marginator;
-    animation-name: marginator;
-
-
-
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    }
-    /*the carousel will pause on hover and the movement is regulated here*/
-    div#carousel:hover > *{
-
-
-      -webkit-animation-play-state: paused;
-      animation-play-state: paused;
-    }
-
-    @-webkit-keyframes marginator {
+@media (min-width: 400px) and (max-width: 800px) {
+-webkit-keyframes marginator {
       0% {
         -webkit-transform: translate(0,0);
         -webkit-transform: translate3d(0,0,0);
@@ -396,6 +371,7 @@ div#carousel {
         -webkit-transform: translate3d(-100%,0,0);
       }
     }
+  }
 
     @keyframes marginator {
       0% {
@@ -418,18 +394,11 @@ div#carousel {
       }
     }
 
-@media (max-width: 600px) {
-  div#carousel {
-    width: 100%;
-    padding-left: 10px;
-  }
-}
-
 div#title-cv {
   height: 100px;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 800px) {
   div#title-cv {
     width: 100%;
     overflow: hidden;
@@ -480,7 +449,7 @@ div#title-cv {
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 800px) {
   .l-cv {
     margin-top: 50px;
   .l-job-1 {
@@ -520,6 +489,16 @@ div#title-cv {
       padding-left: 40px;
       margin-top: -6px;
     }
+
+    div#footer {
+      display: inline-block;
+      font-size: 24px;
+      height: 120px;
+      width: 100%;
+      padding: 10px;
+      background-color: $tertiary-color;
+
+  }
   }
  }
 }
