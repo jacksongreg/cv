@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin:500,700");
 body {
-  margin-top: 0;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin: 0;
   font-family: "Libre Franklin", sans-serif;
   font-size: 14px;
   color: #2a2a2b;
   overflow-x: hidden;
+  width: 100%;
 }
 
 body h1, body h2, body h3, body h4, body h5 {
@@ -28,13 +27,19 @@ body h1, body h2, body h3, body h4, body h5 {
 }
 
 .skill {
-  padding-left: 45px;
-  padding-right: 60px;
+  padding-left: 60px;
+  padding-right: 40px;
   background-color: #bac3e4;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pic {
   background-color: #bac3e4;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+  padding-right: 80px;
 }
 
 .footer {
@@ -45,38 +50,35 @@ body h1, body h2, body h3, body h4, body h5 {
   width: 100%;
   padding: 10px;
   background-color: #bac3e4;
+  padding-right: 80px;
+}
+
+.strip {
+  background-color: #bac3e4;
+  height: 10px;
+  width: 100%;
+  padding-right: 60px;
 }
 
 a {
   color: black;
 }
 
-pre {
-  display: none;
-}
-
 #contact {
   text-align: center;
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
-  body {
-    display: block;
-    margin: 0;
-  }
-}
-
 .l-wrap {
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  width: 100%;
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
-  .l-wrap {
-    width: 100%;
-    margin: 0;
-  }
+button {
+  margin-left: 20px;
+  display: inline;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 .grid-item {
@@ -85,34 +87,6 @@ pre {
   padding-left: 4%;
   padding-right: 4%;
   float: left;
-}
-
-.grid-items {
-  width: calc((100% * 3) / 3);
-  margin-top: 0;
-  float: left;
-}
-
-.grid-inner {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: left;
-  height: 400px;
-  text-align: left;
-}
-
-.grid-inner p {
-  font-weight: 500;
-  font-size: 17px;
-  padding-left: 40px;
-}
-
-.grid-inner h4 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 34px;
-  margin-left: 40px;
 }
 
 .l-education {
@@ -126,36 +100,16 @@ pre {
 
 .l-education .l-academy {
   width: 41.66667%;
-  border-right: 1px dashed grey;
-}
-
-@media (min-width: 400px) and (max-width: 800px) {
-  .l-education {
-    margin-left: -13px;
-    height: 850px;
-  }
-  .l-education .l-highschool {
-    width: 100%;
-  }
-  .l-education .l-college {
-    margin-top: 20px;
-    width: 100%;
-  }
-  .l-education .l-academy {
-    margin-top: 20px;
-    width: 100%;
-  }
 }
 
 div#header {
   margin-top: -40px;
-  height: 675px;
   background-image: url("");
   background-size: cover;
   background-position: center;
   top: 0;
   width: 100%;
-  height: 675px;
+  height: 500px;
 }
 
 div#header h2 {
@@ -183,7 +137,120 @@ div#header p {
   width: 550px;
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky {
+  padding-top: 10px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 20px;
+  margin-left: 35px;
+  padding: 30px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  margin-left: 30px;
+}
+
+div#title-education {
+  height: 100px;
+  margin-top: -40px;
+  padding-top: 20px;
+}
+
+div#title-cv {
+  height: 100px;
+}
+
+.l-cv {
+  height: 200px;
+}
+
+.l-cv .l-job-1 {
+  width: 41.66667%;
+}
+
+.l-cv .l-job-1 h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  margin-left: 15px;
+}
+
+.l-cv .l-job-1 p {
+  font-weight: 500;
+  font-size: 17px;
+  padding-left: 15px;
+}
+
+.l-cv .l-job-2 {
+  width: 41.66667%;
+}
+
+.l-cv h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  margin-left: 15px;
+}
+
+.l-cv p {
+  font-weight: 500;
+  font-size: 17px;
+  padding-left: 15px;
+  margin-top: -6px;
+}
+
+.l-education {
+  height: 200px;
+}
+
+.l-education .l-academy {
+  width: 41.66667%;
+}
+
+.l-education .l-academy h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  margin-left: 15px;
+}
+
+.l-education .l-academy p {
+  font-weight: 500;
+  font-size: 17px;
+  padding-left: 15px;
+}
+
+.l-education .l-highschool {
+  width: 41.66667%;
+}
+
+.l-education h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  margin-left: 15px;
+}
+
+.l-education p {
+  font-weight: 500;
+  font-size: 17px;
+  padding-left: 15px;
+  margin-top: -6px;
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
   div#header {
     width: 100%;
     margin: 0;
@@ -196,233 +263,67 @@ div#header p {
     width: 100%;
     margin: 2px;
     font-size: 15px;
+    margin-left: 60px;
   }
   div#header h2 {
     width: 100%;
     margin: 0;
     font-size: 25px;
     color: #000;
+    margin-left: 60px;
   }
   div#header h4 {
     width: 100%;
     margin: 0;
     font-size: 20px;
     color: #000;
+    margin-left: 60px;
   }
-}
-
-div#nav {
-  height: 90px;
-  overflow: hidden;
-  background-color: #bac3e4;
-  z-index: 3;
-  padding-right: 20px;
-}
-
-nav {
-  display: inline-block;
-  width: max-content;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-  width: 100%;
-  margin-right: 300px;
-  text-align: center;
-}
-
-nav li {
-  display: inline-flex;
-  justify-content: flex-end;
-  padding: 10px 0;
-  margin-right: 100px;
-  text-align: center;
-  font-weight: 600;
-}
-
-nav li a {
-  margin-left: 20px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #2a2a2b;
-  text-shadow: 2px 2px black;
-}
-
-nav li a:hover {
-  color: #2a2a2b;
-  text-decoration: underline;
-  text-shadow: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky {
-  padding-top: 10px;
-}
-
-@media (max-width: 800px) {
-  nav ul {
-    display: block;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    float: left;
+  .l-education {
+    margin-left: 20px;
+    height: 600px;
   }
-  nav li {
+  .l-education .l-highschool {
     width: 100%;
-    padding: 5px;
+  }
+  .l-education .l-college {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .l-education .l-academy {
+    margin-top: 20px;
+    width: 100%;
+  }
+  body {
     display: block;
-    background-color: #bac3e4;
-    text-align: center;
+    margin: 0;
   }
-  nav ul li a {
-    color: black;
-    padding-bottom: 3px;
-    text-align: center;
-    font-size: 12px;
-    text-shadow: none;
-  }
-  nav ul li a:hover {
-    color: darkgrey;
-  }
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 20px;
-  margin-left: 60px;
-  padding: 30px;
-}
-
-h4 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 34px;
-  margin-left: 60px;
-}
-
-div#title-education {
-  height: 100px;
-  margin-top: -40px;
-}
-
-@media (min-width: 400px) and (max-width: 800px) {
   div#title-education {
     width: 100%;
-    padding-left: 10px;
   }
-}
-
-div#title-skills {
-  height: 100px;
-  margin-top: 320px;
-  background-color: #bac3e4;
-}
-
-@media (min-width: 400px) and (max-width: 800px) {
   div#title-skills {
-    display: none;
+    height: 100px;
+    margin-top: 320px;
+    background-color: #bac3e4;
+    padding-right: 80px;
     width: 100%;
-    margin-top: 620px;
+  }
+  div#title-skills {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
     padding-left: 10px;
   }
-}
-
-@media (min-width: 400px) and (max-width: 800px) {
-  -webkit-keyframes marginator 0% {
-    -webkit-transform: translate(0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-  }
-  -webkit-keyframes marginator 100% {
-    -webkit-transform: translate(-100%, 0);
-    -webkit-transform: translate3d(-100%, 0, 0);
-  }
-}
-
-@keyframes marginator {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-div#title-cv {
-  height: 100px;
-}
-
-@media (min-width: 400px) and (max-width: 800px) {
-  div#title-cv {
-    width: 100%;
-    overflow: hidden;
-    margin-top: -10px;
-  }
-  div#title-cv h3 {
-    font-size: 20px;
-    margin-left: 0;
-  }
-}
-
-.l-cv {
-  height: 200px;
-}
-
-.l-cv .l-job-1 {
-  width: 41.66667%;
-  border-right: 1px dashed grey;
-}
-
-.l-cv .l-job-1 h4 {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 34px;
-  margin-left: 40px;
-}
-
-.l-cv .l-job-1 p {
-  font-weight: 500;
-  font-size: 17px;
-  padding-left: 40px;
-}
-
-.l-cv .l-job-2 {
-  width: 41.66667%;
-}
-
-.l-cv h4 {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 34px;
-  margin-left: 40px;
-}
-
-.l-cv p {
-  font-weight: 500;
-  font-size: 17px;
-  padding-left: 40px;
-  margin-top: -6px;
-}
-
-@media (min-width: 400px) and (max-width: 800px) {
   .l-cv {
     margin-top: 50px;
   }
   .l-cv .l-job-1 {
     width: 100%;
     text-align: left;
+  }
+  .l-cv .l-job-1 .l-wrap {
+    width: 100%;
+    margin: 0;
   }
   .l-cv .l-job-1 h4 {
     font-size: 17px;
@@ -433,6 +334,70 @@ div#title-cv {
     font-weight: 500;
     font-size: 17px;
     padding-left: 40px;
+    margin-top: -6px;
+  }
+  .l-cv .l-cv {
+    height: 200px;
+  }
+  .l-cv .l-cv .l-job-1 {
+    width: 100%;
+  }
+  .l-cv .l-cv .l-job-1 h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    margin-left: 20px;
+  }
+  .l-cv .l-cv .l-job-1 p {
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 0;
+  }
+  .l-cv .l-cv .l-job-2 {
+    width: 100%;
+  }
+  .l-cv .l-cv h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    margin-left: 20px;
+  }
+  .l-cv .l-cv p {
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 0;
+    margin-top: -6px;
+  }
+  .l-cv .l-education {
+    height: 200px;
+  }
+  .l-cv .l-education .l-academy {
+    width: 100%;
+  }
+  .l-cv .l-education .l-academy h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    margin-left: 20px;
+  }
+  .l-cv .l-education .l-academy p {
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 0;
+  }
+  .l-cv .l-education .l-highschool {
+    width: 100%;
+  }
+  .l-cv .l-education h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    margin-left: 20px;
+  }
+  .l-cv .l-education p {
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 0;
     margin-top: -6px;
   }
   .l-cv .l-job-2 {
@@ -457,5 +422,180 @@ div#title-cv {
     width: 100%;
     padding: 10px;
     background-color: #bac3e4;
+  }
+  .l-cv .l-job-2 div#footer div#title-cv {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -10px;
+  }
+  .l-cv .l-job-2 div#footer div#title-cv h3 {
+    font-size: 20px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    margin-left: 20px;
+  }
+  .l-wrap {
+    width: 100%;
+  }
+  div#header {
+    width: 100%;
+    margin: 0;
+    color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  div#header p {
+    width: 100%;
+    margin: 30px;
+    font-size: 15px;
+  }
+  div#header h2 {
+    width: 100%;
+    margin: 30px;
+    font-size: 25px;
+    color: #000;
+  }
+  div#header h4 {
+    width: 100%;
+    margin: 30px;
+    font-size: 20px;
+    color: #000;
+  }
+  h3 {
+    font-size: 20px;
+    margin-left: 0;
+    padding-left: 20px;
+  }
+  p {
+    margin-left: 20px;
+    padding-left: 0;
+  }
+  .pic {
+    background-color: #bac3e4;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 60px;
+  }
+  .l-education {
+    height: 250px;
+  }
+  div#title-education {
+    width: 100%;
+    padding-left: 10px;
+  }
+  div#title-education {
+    height: 100px;
+    margin-top: -40px;
+    padding-top: 20px;
+  }
+  div {
+    display: block;
+    width: 100%;
+  }
+  div#title-cv {
+    width: 100%;
+    padding-left: 10px;
+  }
+  div#title-cv {
+    height: 100px;
+    margin-top: -40px;
+    padding-top: 20px;
+  }
+  .grid-item {
+    width: 100%;
+    margin-top: 0;
+    padding-left: 4%;
+    padding-right: 4%;
+    float: left;
+  }
+  .grid-inner {
+    width: 100%;
+  }
+  .l-education {
+    height: 460px;
+  }
+  .l-education .l-highschool {
+    width: 100%;
+    border: none;
+  }
+  .l-education .l-academy {
+    width: 100%;
+  }
+  .l-cv {
+    height: 200px;
+  }
+  .l-cv .l-job-1 {
+    width: 100%;
+  }
+  .l-cv .l-job-1 h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    margin-left: 20px;
+  }
+  .l-cv .l-job-1 p {
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 0;
+  }
+  .l-cv .l-job-2 {
+    width: 100%;
+  }
+  .l-cv h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    margin-left: 20px;
+  }
+  .l-cv p {
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 0;
+    margin-top: -6px;
+  }
+  .l-education {
+    height: 200px;
+  }
+  .l-education .l-academy {
+    width: 100%;
+  }
+  .l-education .l-academy h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    margin-left: 20px;
+  }
+  .l-education .l-academy p {
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 0;
+  }
+  .l-education .l-highschool {
+    width: 100%;
+  }
+  .l-education h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    margin-left: 20px;
+  }
+  .l-education p {
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 0;
+    margin-top: -6px;
   }
 }
