@@ -144,7 +144,7 @@ div#header {
   font-size: 50px;
   font-weight: 700;
   line-height: 72px;
-  margin-left: 90px;
+  margin-left: 80px;
   padding-top: 100px;
   }
   h4 {
@@ -181,7 +181,7 @@ h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 20px;
-  margin-left: 35px;
+  margin-left: 60px;
   padding: 30px;
 }
 
@@ -213,13 +213,13 @@ div#title-cv {
       font-weight: 600;
       font-size: 20px;
       line-height: 34px;
-      margin-left: 15px;
+      margin-left: 40px;
     }
 
     p {
       font-weight: 500;
       font-size: 17px;
-      padding-left: 15px;
+      padding-left: 40px;
     }
 
   }
@@ -243,7 +243,7 @@ div#title-cv {
 }
 
 .l-education {
-  height: 200px;
+  height: 250px;
   .l-academy {
     width: percentage(5/12);
 
@@ -251,13 +251,13 @@ div#title-cv {
       font-weight: 600;
       font-size: 20px;
       line-height: 34px;
-      margin-left: 15px;
+      margin-left: 40px;
     }
 
     p {
       font-weight: 500;
       font-size: 17px;
-      padding-left: 15px;
+      padding-left: 40px;
     }
 
   }
@@ -281,6 +281,14 @@ div#title-cv {
 }
 
 @media (min-width: 401px) and (max-width: 800px) {
+
+  h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 20px;
+    margin-left: 40px;
+    padding: 30px;
+  }
 
   div#header {
     width: 100%;

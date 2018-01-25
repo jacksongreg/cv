@@ -116,7 +116,7 @@ div#header h2 {
   font-size: 50px;
   font-weight: 700;
   line-height: 72px;
-  margin-left: 90px;
+  margin-left: 80px;
   padding-top: 100px;
 }
 
@@ -151,7 +151,7 @@ h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 20px;
-  margin-left: 35px;
+  margin-left: 60px;
   padding: 30px;
 }
 
@@ -184,13 +184,13 @@ div#title-cv {
   font-weight: 600;
   font-size: 20px;
   line-height: 34px;
-  margin-left: 15px;
+  margin-left: 40px;
 }
 
 .l-cv .l-job-1 p {
   font-weight: 500;
   font-size: 17px;
-  padding-left: 15px;
+  padding-left: 40px;
 }
 
 .l-cv .l-job-2 {
@@ -212,7 +212,7 @@ div#title-cv {
 }
 
 .l-education {
-  height: 200px;
+  height: 250px;
 }
 
 .l-education .l-academy {
@@ -223,13 +223,13 @@ div#title-cv {
   font-weight: 600;
   font-size: 20px;
   line-height: 34px;
-  margin-left: 15px;
+  margin-left: 40px;
 }
 
 .l-education .l-academy p {
   font-weight: 500;
   font-size: 17px;
-  padding-left: 15px;
+  padding-left: 40px;
 }
 
 .l-education .l-highschool {
@@ -251,6 +251,13 @@ div#title-cv {
 }
 
 @media (min-width: 401px) and (max-width: 800px) {
+  h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 20px;
+    margin-left: 40px;
+    padding: 30px;
+  }
   div#header {
     width: 100%;
     margin: 0;
