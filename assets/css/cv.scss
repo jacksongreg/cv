@@ -134,7 +134,7 @@ button {
 div#header {
   margin-top: -40px;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   background-image: url("../images/greg.jpg");
   top: 0;
   width: 100%;
@@ -293,13 +293,14 @@ div#title-cv {
     width: 100%;
     margin: 0;
     color: black;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
-
+    background-position: center;
+    height:450px;
+    padding-right: 150px;
 
     p{
-      width: 100%;
+      width: 400px;;
       margin:2px;
       font-size: 15px;
       margin-left: 60px;
@@ -533,6 +534,7 @@ h4 {
     background-repeat: no-repeat;
     background-position: top;
 
+
     p{
       width: 100%;
       margin:30px;
@@ -544,6 +546,7 @@ h4 {
       margin: 30px;
       font-size: 25px;
       color: #000;
+      padding-top: 250px;
     }
 
     h4 {
