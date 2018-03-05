@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:500,700");
+
+div#nav {
+  height: 90px;
+  overflow: hidden;
+  background-color: #bac3e4;
+  z-index: 3;
+  padding-right: 20px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  margin-right: 250px;
+  text-align: center;
+}
+
+nav li {
+  display: inline-flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+  margin-right: 100px;
+  text-align: center;
+  font-weight: 600;
+}
+
+nav li a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #2a2a2b;
+
+}
+
+nav li a:hover {
+  color: #2a2a2b;
+  text-decoration: underline;
+  text-shadow: none;
+}
+
+@media(max-width: 800px) {
+  nav ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    float: left;
+  }
+  nav li {
+    display: inline-flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    margin-right: 100px;
+    text-align: center;
+    font-weight: 600;
+  }
+  nav ul li a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2a2a2b;
+
+  }
+  nav ul li a:hover {
+    color: black;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+  nav ul {
+    display: inline;
+    padding-top: 20px;
+    margin: 0;
+    text-align: center;
+    float: left;
+  }
+  nav li {
+    display: inline;
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: 600;
+  }
+  nav ul li a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #2a2a2b;
+
+  }
+}
+
+@media (max-width: 400px) {
+  nav ul {
+    display: inline;
+    padding-top: 0;
+    margin: 0;
+    text-align: center;
+    float: left;
+  }
+  nav li {
+    display: block;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    text-align: center;
+    font-weight: 600;
+  }
+  nav ul li a {
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 15px;
+    color: #2a2a2b;
+
+  }
+}

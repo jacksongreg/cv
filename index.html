@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/css/cv.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+
+    <title> GREG JACKSON | PORTFOLIO</title>
+  </head>
+  <body>
+    <div class="l-wrap">
+
+      <div id="nav">
+        <nav>
+          <ul>
+            <li id="scroll"><a href="#about"> ABOUT </a></li>
+            <li id="scroll-two"><a href="#education"> EDUCATION </a></li>
+            <li id="scroll-three"><a href="#cv"> SKILLS</a></li>
+            <li id="scroll-four"><a href="#contact"> CONTACT </a></li>
+          </ul>
+        </nav>
+      </div>
+
+    <div id="header">
+
+      <h2 id="about">GREG JACKSON</h2>
+
+      <h4>Junior Web Developer</h4>
+
+      <p>I have recently discovered coding so I am an example of 'teaching an old dog a new trick'. This is an exciting new endeavor for me. I have a preference for Front-End development. I have a passion for movies. I also like to read and I am an avid gamer.</p>
+
+    </div>
+
+    <div class="strip"></div>
+
+
+  </div>
+
+    <div id="title-education">
+
+      <h3 id="education">Education</h3>
+
+    </div>
+
+    <div class="two-col-grid">
+
+    <div class="l-education" >
+
+    <div class="grid-item l-academy ">
+      <div class="grid-inner">
+        <div>
+        <h4>Course</h4>
+
+          <p><b>CodeSpace</b></p>
+
+                  <p>Front end web development</p>
+
+                  <p>Programming, professional development, design thinking</p>
+
+                  <p>HTML and Bootstrap Framework,CSS (SASS and SCSS),
+                     Javascript (Node.js, Express.js, Mongoose, jQuery, React.js)
+                     Mongodb, MySQL
+                  </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="grid-item l-highschool ">
+      <div class="grid-inner">
+        <h4>High School</h4>
+
+        <p style="margin-top: -4px"><b>Theodor Herzl High School</b></p>
+
+        <p class="schoola">Matric</p>
+        <p class="schoola">1988</p>
+        <p class="school">English Home Language</p>
+        <p class="school">Afrikaans First Additional Language</p>
+        <p class="school">Mathematics</p>
+        <p class="school">Science</p>
+        <p class="school">Biology</p>
+        <p class="school">Geography</p>
+
+      </div>
+    </div>
+
+  </div>
+ </div>
+</div>
+
+  <div class="l-wrap">
+
+    <div id="title-skills">
+
+      <h3 style="text-align: center">Skills</h3>
+
+    </div>
+
+      <div class="pic">
+          <img class="skill" src="assets/images/white git.png" width="80px" height= "80px">
+          <img class="skill" src="assets/images/css.png" width="80px" height= "80px">
+          <img class="skill" src="assets/images/sql.png" width="80px" height= "80px">
+          <img class="skill" src="assets/images/html.png" width="80px" height= "80px">
+          <img class="skill" src="assets/images/jquery.png" width="80px" height= "80px">
+          <img class="skill" src="assets/images/js.png" width="80px" height= "80px">
+          <img class="skill" src="assets/images/white sass.png" width="80px" height= "80px">
+        </div>
+
+
+    <div id="title-cv"><h3 id="work">Work Experience</h3></div>
+
+    <div class="two-col-grid">
+
+    <div class="l-cv" >
+
+    <div class="grid-item l-job-1">
+      <div class="grid-inner">
+
+        <h4>Mr Delivery</h4>
+
+        <p>Manager</p>
+
+        <p>2012 - 2017</p>
+
+        <p>I managed a team of drivers. I monitored their progress while they were busy doing deliveries of food and parcels. </p>
+
+      </div>
+    </div>
+
+    <div class="grid-item l-job-2">
+      <div class="grid-inner">
+        <h4>Pyramid Video Store</h4>
+
+        <p>Night Manager</p>
+
+        <p>2007 - 2010</p>
+
+        <p>Assisting clients and managing the store in the evenings</p>
+      </div>
+    </div>
+
+  </div>
+
+
+ </div>
+
+</div>
+
+<div id="work-section">
+
+  <div id="call-to-action"><h4 id="contact">If you are interested please contact me <a href="mailto:gjfpjackson@gmail.com"><button>Contact</button></a></h4></div>
+
+  <div class="footer">
+    <div>
+      <a href="https://www.linkedin.com/in/greg-jackson-1ab657154/" target="_blank"> <img src="assets\images\link.png" alt="linkedin" width="35px" height="35px"> LinkedIn</a> <a href="https://github.com/jacksongreg"target="_blank"> <img src="assets\images\white git.png" alt="GitHub" width="35px" height="35px" style="padding-left: 0"> GitHub</a>
+    </div>
+    <p class="mail"><img src="assets\images\gmail.png" alt="gmail" width="35px" height="35px"><a href="mailto:gjfpjackson@gmail.com"> gjfpjackson@gmail.com</a></p>
+  </div>
+  </div>
+</div>
+
+
+<script>
+
+  window.onscroll = function() {myFunction()};
+
+  var nav = document.getElementById("nav");
+  var sticky = nav.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      nav.classList.add("sticky")
+    } else {
+      nav.classList.remove("sticky");
+    }
+  }
+
+  $('#scroll').click(function(){
+    $('html, body').animate({
+      scrollTop: $('#about').offset().top
+    },1000)
+  })
+
+  $('#scroll-two').click(function(){
+    $('html, body').animate({
+      scrollTop: $('#education').offset().top - 100
+    },1000)
+  })
+
+  $('#scroll-three').click(function(){
+    $('html, body').animate({
+      scrollTop: $('#title-skills').offset().top - 100
+    },1000)
+  })
+
+  $('#scroll-four').click(function(){
+    $('html, body').animate({
+      scrollTop: $('#contact').offset().top
+    },1000)
+  })
+  </script>
+  </body>
+</html>
